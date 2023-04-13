@@ -3,6 +3,33 @@ body {
   background-color: black;
 }
 
+.nav-link {
+  font-size: 22px;
+  color: white;
+  position: relative;
+  text-decoration: none;
+  margin-left: 50px;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-link:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
 .header-text {
   position: absolute;
   top: 50%;
@@ -60,6 +87,7 @@ footer {
 
 .card {
   background-color: rgba(150, 171, 215, 0);
+  color: white;
 }
 
 .card-body {
@@ -69,4 +97,13 @@ footer {
 #contact-form {
   background-color: #0094fe4a;
   padding: 2%;
+}
+
+.list-group-item {
+  color: white;
+  background-color: #0094fe4a;
+}
+
+.list-group {
+  border-radius: 5px;
 }

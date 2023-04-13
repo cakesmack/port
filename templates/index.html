@@ -1,22 +1,20 @@
 {% extends 'base.html' %} {% block content %}
-<header>
-
-</header>
+<header></header>
 <!-- services -->
-<section class="container mt-5 mb-5"  id="services">
-  <h2 class="mb-5 display-3 text-center ">
-    Empowering Businesses with Cutting-Edge Web Solutions and
-    Results-Driven Marketing Strategies
+<section class="container mt-5 mb-5" id="services">
+  <h2 class="mb-5 display-3 text-center border-bottom p-5">
+    Empowering Businesses with Cutting-Edge Web Solutions and Results-Driven
+    Marketing Strategies
   </h2>
   <div class="row">
     <div class="col-sm-3">
-      <div class="card" style="width: 18rem">
+      <div class="card">
         <img
-          class="card-img-top "
+          class="card-img-top"
           src="{{ url_for('static', filename='images/web1.png')}}"
           alt="Card image cap"
         />
-        <div class="card-body  bg-dark mt-2">
+        <div class="card-body mt-2">
           <h5 class="card-title">Eye-Catching Web Design</h5>
           <p class="card-text">
             Craft visually stunning and user-friendly websites that captivate
@@ -26,13 +24,13 @@
       </div>
     </div>
     <div class="col-sm-3">
-      <div class="card" style="width: 18rem">
+      <div class="card">
         <img
           class="card-img-top"
           src="{{ url_for('static', filename='images/segmentation.png')}}"
           alt="Card image cap"
         />
-        <div class="card-body bg-dark mt-2">
+        <div class="card-body mt-2">
           <h5 class="card-title">Results-Driven Digital Marketing</h5>
           <p class="card-text">
             Boost your online visibility with strategic SEO and social media
@@ -42,13 +40,13 @@
       </div>
     </div>
     <div class="col-sm-3">
-      <div class="card" style="width: 18rem">
+      <div class="card">
         <img
           class="card-img-top"
           src="{{ url_for('static', filename='images/target.png')}}"
           alt="Card image cap"
         />
-        <div class="card-body bg-dark mt-2">
+        <div class="card-body mt-2">
           <h5 class="card-title">Insightful Data Analysis</h5>
           <p class="card-text">
             Uncover valuable insights and make data-driven decisions to optimize
@@ -58,13 +56,13 @@
       </div>
     </div>
     <div class="col-sm-3">
-      <div class="card" style="width: 18rem">
+      <div class="card">
         <img
           class="card-img-top"
           src="{{ url_for('static', filename='images/social-media.png')}}"
           alt="Card image cap"
         />
-        <div class="card-body bg-dark mt-2">
+        <div class="card-body mt-2">
           <h5 class="card-title">Expert Social Media Management</h5>
           <p class="card-text">
             Engage your audience, build brand loyalty, and expand your reach
@@ -74,330 +72,339 @@
       </div>
     </div>
   </div>
-</div>
-<!-- End Services First Section -->
 
+  <!-- End Services First Section -->
 
-
-<!-- detailed services section -->
-<section class="container mt-5">
-
-  <!-- web -->
-  <section class="row service" id="web">
-    <div class="col-sm-6">
-      <h2 class="display-4">Website Design and Development</h2>
-      <p class="lead">
-        Attractive and Functional Websites Tailored to Your Needs
-      </p>
-      <p>
-        Our website design and development services aim to provide you with a
-        strong online presence that reflects your brand's identity and resonates
-        with your target audience. With our expertise, we ensure that your
-        website is not only visually appealing but also fully functional and
-        easy to navigate.
-      </p>
-      <a
-        class="btn btn-outline-light"
-        data-toggle="collapse"
-        href="#weblist"
-        role="button"
-        aria-expanded="false"
-        aria-controls="weblist"
-      >
-        Read More
-      </a>
-
-      <div class="collapse" id="weblist">
-        <ul class= list-group list-group-flush">
-          <li class="list-group-item">
-            Custom Web Design: Unique designs that capture your brand essence
-            and make a lasting impression on visitors.
-          </li>
-          <li class="list-group-item">
-            Responsive Design: Ensure your website looks great and functions
-            seamlessly on all devices, from desktops to smartphones.
-          </li>
-          <li class="list-group-item">
-            User Experience (UX) Optimization: Enhance website usability and
-            accessibility, keeping your visitors engaged and improving
-            conversion rates.
-          </li>
-          <li class="list-group-item">
-            Content Management System (CMS) Integration: Easily update and
-            manage your website's content with popular CMS platforms like
-            WordPress, Joomla, or Drupal.
-          </li>
-          <li class="list-group-item">
-            E-commerce Solutions: Set up an efficient and secure online store,
-            enabling your customers to shop with ease.
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="col-sm-6">
-      <img src="{{url_for('static',filename='images/web.png')}}" alt="" width="100%" />
-    </div>
-  </section>
- 
-  <!-- marketing -->
-  <section class="row service" id="marketing">
-    <div class="col-sm-6">
-      <img
-        src="{{url_for('static',filename='images/marketing.png')}}"
-        alt=""
-        width="100%"
-      />
-    </div>
-    <div class="col-sm-6">
-      <h2 class="display-4">Digital Marketing</h2>
-      <p class="lead">Grow Your Online Presence and Drive Results</p>
-      <p>
-        Our digital marketing services are designed to help you increase your
-        online visibility, reach your target audience, and drive more traffic
-        and conversions. We utilize a combination of search engine optimization
-        (SEO) and social media marketing to deliver results that align with your
-        business goals.
-      </p>
-      <a
-        class="btn btn-outline-light"
-        data-toggle="collapse"
-        href="#marketinglist"
-        role="button"
-        aria-expanded="false"
-        aria-controls="weblist"
-      >
-        Read More
-      </a>
-
-      <div class="collapse" id="marketinglist">
-        <ul class= list-group list-group-flush">
-          <li class="list-group-item">
-            Search Engine Optimization (SEO): Improve your website's search
-            engine ranking, attracting more organic traffic and potential
-            customers.
-          </li>
-          <li class="list-group-item">
-            Pay-Per-Click (PPC) Advertising: Launch targeted ad campaigns on
-            platforms like Google Ads or Bing Ads to boost your online presence.
-          </li>
-          <li class="list-group-item">
-            Social Media Marketing: Promote your brand on popular platforms like
-            Facebook, Instagram, and Twitter, driving engagement and brand
-            awareness.
-          </li>
-          <li class="list-group-item">
-            Email Marketing: Build and nurture your email list with personalized
-            and targeted campaigns, fostering customer loyalty and driving
-            conversions.
-          </li>
-          <li class="list-group-item">
-            Content Marketing: Create and distribute valuable content that
-            resonates with your target audience, establishing you as an industry
-            expert.
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
- 
-  <!-- Data Analysis -->
-  <section class="row  service" id="data">
-    <div class="col-sm-6">
-      <h2 class="display-4">Data Analysis</h2>
-      <p class="lead">
-        Unlock the Power of Data to Optimize Your Business Strategy
-      </p>
-      <p>
-        Our data analysis services help you uncover hidden patterns and valuable
-        insights within your data, empowering you to make informed decisions and
-        optimize your business strategy.
-      </p>
-      <a
-        class="btn btn-outline-light"
-        data-toggle="collapse"
-        href="#datalist"
-        role="button"
-        aria-expanded="false"
-        aria-controls="datalist"
-      >
-        Read More
-      </a>
-
-      <div class="collapse" id="datalist">
-        <ul class="p-2 list-group list-group-flush">
-          <li class="list-group-item">
-            Data Collection & Integration: Gather, clean, and consolidate data
-            from various sources for accurate and actionable insights.
-          </li>
-          <li class="list-group-item">
-            Descriptive Analysis: Summarize and visualize your data to identify
-            trends, patterns, and areas of improvement.
-          </li>
-          <li class="list-group-item">
-            Predictive Analysis: Utilize advanced algorithms to forecast future
-            trends and make data-driven decisions.
-          </li>
-          <li class="list-group-item">
-            Prescriptive Analysis: Develop recommendations and strategies based
-            on your data insights to drive growth and efficiency.
-          </li>
-          <li class="list-group-item">
-            Reporting & Visualization: Communicate your findings effectively
-            through clear, concise, and visually appealing reports and
-            dashboards.
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="col-sm-6">
-      <img
-        src="{{url_for('static',filename='images/data.png')}}"
-        alt=""
-        width="100%"
-      />
-    </div>
-  </section>
-  <!-- Social Media -->
-  <section class="row service" id="social">
-    <div class="col-sm-6">
-      <img
-        src="{{url_for('static',filename='images/social.png')}}"
-        alt=""
-        width="100%"
-      />
-    </div>
-    <div class="col-sm-6">
-      <h2 class="display-4">Social Media Management</h2>
-      <p class="lead">
-        Expertly Crafted Strategies to Engage and Grow Your Online Community
-      </p>
-      <p>
-        Our social media management services help you build a strong online
-        community, foster brand loyalty, and expand your reach. We work closely
-        with you to create tailored strategies that resonate with your audience
-        and align with your business objectives.
-      </p>
-      <a
-        class="btn btn-outline-light"
-        data-toggle="collapse"
-        href="#sociallist"
-        role="button"
-        aria-expanded="false"
-        aria-controls="sociallist"
-      >
-        Read More
-      </a>
-
-      <div class="collapse" id="sociallist">
-        <ul class="p-2 list-group list-group-flush">
-          <li class="list-group-item">
-            Social Media Strategy: Develop a customized plan that leverages the
-            right platforms, content, and engagement tactics for your brand.
-          </li>
-          <li class="list-group-item">
-            Content Creation & Curation: Craft compelling content, including
-            images, videos, and articles, to captivate and engage your audience.
-          </li>
-          <li class="list-group-item">
-            Scheduling & Posting: Maintain a consistent presence across
-            platforms with regular, optimized posting and scheduling.
-          </li>
-          <li class="list-group-item">
-            Community Management: Monitor and respond to comments, messages, and
-            reviews, fostering positive relationships with your audience.
-          </li>
-          <li class="list-group-item">
-            Analytics & Reporting: Track your social media performance and
-            adjust your strategy based on data-driven insights.
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-</section>
-
-<!-- portfolio section -->
-<section id="work">
-<div
-  class="hero-image mt-5"
-  style="background-image: url({{url_for('static', filename='images/projects.png') }}); height:300px;"
->
-  <div class="hero-text">
-    <h1 class="mb-3 display-3">My Projects</h1>
-  </div>
-</div>
-<div class="container mt-5" >
-  <div class="row">
-    <div class="col-lg-6">
-      <div class="card">
-        <a href="http:www.arwoodlandconsultants.com">
-          <img
-            class="card-img-top"
-            src="{{ url_for('static', filename='images/ar.png')}}"
-            alt="Card image cap"
-          />
+  <!-- detailed services section -->
+  <section class="container mt-5">
+    <!-- web -->
+    <section class="row service" id="web">
+      <div class="col-sm-6">
+        <h2 class="display-4">Website Design and Development</h2>
+        <p class="lead">
+          Attractive and Functional Websites Tailored to Your Needs
+        </p>
+        <p>
+          Our website design and development services aim to provide you with a
+          strong online presence that reflects your brand's identity and
+          resonates with your target audience. With our expertise, we ensure
+          that your website is not only visually appealing but also fully
+          functional and easy to navigate.
+        </p>
+        <a
+          class="btn btn-outline-light"
+          data-toggle="collapse"
+          href="#weblist"
+          role="button"
+          aria-expanded="false"
+          aria-controls="weblist"
+        >
+          Read More
         </a>
-        <div class="card-body">
-          <h5 class="card-title">A & R Woodland Consultants</h5>
+
+        <div class="collapse" id="weblist">
+          <ul class="p-2 list-group list-group-flush">
+            <li class="list-group-item">
+              Custom Web Design: Unique designs that capture your brand essence
+              and make a lasting impression on visitors.
+            </li>
+            <li class="list-group-item">
+              Responsive Design: Ensure your website looks great and functions
+              seamlessly on all devices, from desktops to smartphones.
+            </li>
+            <li class="list-group-item">
+              User Experience (UX) Optimization: Enhance website usability and
+              accessibility, keeping your visitors engaged and improving
+              conversion rates.
+            </li>
+            <li class="list-group-item">
+              Content Management System (CMS) Integration: Easily update and
+              manage your website's content with popular CMS platforms like
+              WordPress, Joomla, or Drupal.
+            </li>
+            <li class="list-group-item">
+              E-commerce Solutions: Set up an efficient and secure online store,
+              enabling your customers to shop with ease.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <img
+          src="{{url_for('static',filename='images/web.png')}}"
+          alt=""
+          width="100%"
+        />
+      </div>
+    </section>
+
+    <!-- marketing -->
+    <section class="row service" id="marketing">
+      <div class="col-sm-6">
+        <img
+          src="{{url_for('static',filename='images/marketing.png')}}"
+          alt=""
+          width="100%"
+        />
+      </div>
+      <div class="col-sm-6">
+        <h2 class="display-4">Digital Marketing</h2>
+        <p class="lead">Grow Your Online Presence and Drive Results</p>
+        <p>
+          Our digital marketing services are designed to help you increase your
+          online visibility, reach your target audience, and drive more traffic
+          and conversions. We utilize a combination of search engine
+          optimization (SEO) and social media marketing to deliver results that
+          align with your business goals.
+        </p>
+        <a
+          class="btn btn-outline-light"
+          data-toggle="collapse"
+          href="#marketinglist"
+          role="button"
+          aria-expanded="false"
+          aria-controls="weblist"
+        >
+          Read More
+        </a>
+
+        <div class="collapse" id="marketinglist">
+          <ul class="p-2 list-group list-group-flush">
+            <li class="list-group-item">
+              Search Engine Optimization (SEO): Improve your website's search
+              engine ranking, attracting more organic traffic and potential
+              customers.
+            </li>
+            <li class="list-group-item">
+              Pay-Per-Click (PPC) Advertising: Launch targeted ad campaigns on
+              platforms like Google Ads or Bing Ads to boost your online
+              presence.
+            </li>
+            <li class="list-group-item">
+              Social Media Marketing: Promote your brand on popular platforms
+              like Facebook, Instagram, and Twitter, driving engagement and
+              brand awareness.
+            </li>
+            <li class="list-group-item">
+              Email Marketing: Build and nurture your email list with
+              personalized and targeted campaigns, fostering customer loyalty
+              and driving conversions.
+            </li>
+            <li class="list-group-item">
+              Content Marketing: Create and distribute valuable content that
+              resonates with your target audience, establishing you as an
+              industry expert.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Data Analysis -->
+    <section class="row service" id="data">
+      <div class="col-sm-6">
+        <h2 class="display-4">Data Analysis</h2>
+        <p class="lead">
+          Unlock the Power of Data to Optimize Your Business Strategy
+        </p>
+        <p>
+          Our data analysis services help you uncover hidden patterns and
+          valuable insights within your data, empowering you to make informed
+          decisions and optimize your business strategy.
+        </p>
+        <a
+          class="btn btn-outline-light"
+          data-toggle="collapse"
+          href="#datalist"
+          role="button"
+          aria-expanded="false"
+          aria-controls="datalist"
+        >
+          Read More
+        </a>
+
+        <div class="collapse" id="datalist">
+          <ul class="p-2 list-group list-group-flush">
+            <li class="list-group-item">
+              Data Collection & Integration: Gather, clean, and consolidate data
+              from various sources for accurate and actionable insights.
+            </li>
+            <li class="list-group-item">
+              Descriptive Analysis: Summarize and visualize your data to
+              identify trends, patterns, and areas of improvement.
+            </li>
+            <li class="list-group-item">
+              Predictive Analysis: Utilize advanced algorithms to forecast
+              future trends and make data-driven decisions.
+            </li>
+            <li class="list-group-item">
+              Prescriptive Analysis: Develop recommendations and strategies
+              based on your data insights to drive growth and efficiency.
+            </li>
+            <li class="list-group-item">
+              Reporting & Visualization: Communicate your findings effectively
+              through clear, concise, and visually appealing reports and
+              dashboards.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <img
+          src="{{url_for('static',filename='images/data.png')}}"
+          alt=""
+          width="100%"
+        />
+      </div>
+    </section>
+    <!-- Social Media -->
+    <section class="row service" id="social">
+      <div class="col-sm-6">
+        <img
+          src="{{url_for('static',filename='images/social.png')}}"
+          alt=""
+          width="100%"
+        />
+      </div>
+      <div class="col-sm-6">
+        <h2 class="display-4">Social Media Management</h2>
+        <p class="lead">
+          Expertly Crafted Strategies to Engage and Grow Your Online Community
+        </p>
+        <p>
+          Our social media management services help you build a strong online
+          community, foster brand loyalty, and expand your reach. We work
+          closely with you to create tailored strategies that resonate with your
+          audience and align with your business objectives.
+        </p>
+        <a
+          class="btn btn-outline-light"
+          data-toggle="collapse"
+          href="#sociallist"
+          role="button"
+          aria-expanded="false"
+          aria-controls="sociallist"
+        >
+          Read More
+        </a>
+
+        <div class="collapse" id="sociallist">
+          <ul class="p-2 list-group list-group-flush">
+            <li class="list-group-item">
+              Social Media Strategy: Develop a customized plan that leverages
+              the right platforms, content, and engagement tactics for your
+              brand.
+            </li>
+            <li class="list-group-item">
+              Content Creation & Curation: Craft compelling content, including
+              images, videos, and articles, to captivate and engage your
+              audience.
+            </li>
+            <li class="list-group-item">
+              Scheduling & Posting: Maintain a consistent presence across
+              platforms with regular, optimized posting and scheduling.
+            </li>
+            <li class="list-group-item">
+              Community Management: Monitor and respond to comments, messages,
+              and reviews, fostering positive relationships with your audience.
+            </li>
+            <li class="list-group-item">
+              Analytics & Reporting: Track your social media performance and
+              adjust your strategy based on data-driven insights.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- portfolio section -->
+  <section id="work">
+    <div
+      class="hero-image mt-5"
+      style="background-image: url({{url_for('static', filename='images/projects.png') }}); height:300px;"
+    >
+      <div class="hero-text">
+        <h1 class="mb-3 display-3">My Projects</h1>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card">
+            <a href="http:www.arwoodlandconsultants.com">
+              <img
+                class="card-img-top"
+                src="{{ url_for('static', filename='images/ar.png')}}"
+                alt="Card image cap"
+              />
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">A & R Woodland Consultants</h5>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-</section>
-<!-- end portfolio section -->
+  </section>
+  <!-- end portfolio section -->
 
-<!-- contact section-->
-<section id="contact">
-<div class="container-fluid mt-5">
-  <div
-    class="hero-image"
-    style="background-image: url({{url_for('static', filename='images/contact.png') }}); height:300px;"
-  >
-    <div class="hero-text">
-      <h1 class="mb-3 display-3">Get In Touch</h1>
-    </div>
-  </div>
-</div>
-
-<div class="container-fluid" id="contact-form">
-  <div class="row">
-    <div class="col-sm-4 offset-sm-2">
-      <p class="lead">For any queries regarding my services and pricing, fill in the contact form provided, or click <a href="mailto:cmack6189@gmail.com"> here to email</a> me</p>
-    </div>
-    <div class="col-sm-4">
-      <div>
-        {% with messages = get_flashed_messages() %} {% if messages %}
-        <ul class="list-unstyled">
-          {% for message in messages %}
-          <li class="list-group-item">{{ message }}</li>
-          {% endfor %}
-        </ul>
-        {% endif %} {% endwith %}
+  <!-- contact section-->
+  <section id="contact">
+    <div class="container-fluid mt-5">
+      <div
+        class="hero-image"
+        style="background-image: url({{url_for('static', filename='images/contact.png') }}); height:300px;"
+      >
+        <div class="hero-text">
+          <h1 class="mb-3 display-3">Get In Touch</h1>
+        </div>
       </div>
-      <form action="" method="POST">
-        {{ form.hidden_tag() }}
-        <div class="form-group">
-          <p>{{ form.name.label }}</p>
-          <p>{{ form.name(class_='form-rounded w-100') }}</p>
-        </div>
-        <div class="form-group">
-          <p>{{ form.email.label }}</p>
-          <p>{{ form.email(class_='form-rounded w-100') }}</p>
-        </div>
-        <div class="form-group">
-          <p>{{ form.message.label }}</p>
-          <p>{{ form.message(class_='form-rounded w-100') }}</p>
-        </div>
-        <p>{{ form.submit() }}</p>
-      </form>
     </div>
-  </div>
-</div>
-</section>
-<!-- footer -->
-<footer>
-  <p class="text-center">Copyright &copy;CMDS 2023</p>
-</footer>
 
-{% endblock %}
+    <div class="container-fluid" id="contact-form">
+      <div class="row">
+        <div class="col-sm-4 offset-sm-2">
+          <p class="lead">
+            For any queries regarding my services and pricing, fill in the
+            contact form provided, or click
+            <a href="mailto:cmack6189@gmail.com"> here to email</a> me
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <div>
+            {% with messages = get_flashed_messages() %} {% if messages %}
+            <ul class="list-unstyled">
+              {% for message in messages %}
+              <li class="list-group-item">{{ message }}</li>
+              {% endfor %}
+            </ul>
+            {% endif %} {% endwith %}
+          </div>
+          <form action="" method="POST">
+            {{ form.hidden_tag() }}
+            <div class="form-group">
+              <p>{{ form.name.label }}</p>
+              <p>{{ form.name(class_='form-rounded w-100') }}</p>
+            </div>
+            <div class="form-group">
+              <p>{{ form.email.label }}</p>
+              <p>{{ form.email(class_='form-rounded w-100') }}</p>
+            </div>
+            <div class="form-group">
+              <p>{{ form.message.label }}</p>
+              <p>{{ form.message(class_='form-rounded w-100') }}</p>
+            </div>
+            <p>{{ form.submit() }}</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer>
+    <p class="text-center">Copyright &copy;CMDS 2023</p>
+  </footer>
+
+  {% endblock %}
+</section>
