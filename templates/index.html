@@ -1,8 +1,8 @@
 {% extends 'base.html' %} {% block content %}
-<header></header>
+
 <!-- services -->
-<section class="container mt-5 mb-5" id="services">
-  <h2 class="mb-5 display-3 text-center border-bottom p-5">
+<section class="container" id="services">
+  <h2 class="mb-5 display-3 text-center border-bottom mt-5 pb-5">
     Empowering Businesses with Cutting-Edge Web Solutions and Results-Driven
     Marketing Strategies
   </h2>
@@ -10,13 +10,13 @@
     <div class="col-sm-3">
       <div class="card">
         <img
-          class="card-img-top"
-          src="{{ url_for('static', filename='images/web1.png')}}"
+          class="card-img-top mx-auto"
+          src="{{ url_for('static', filename='images/icon-web-white.png')}}"
           alt="Card image cap"
         />
         <div class="card-body mt-2">
-          <h5 class="card-title">Eye-Catching Web Design</h5>
-          <p class="card-text">
+          <h5 class="card-title text-center">Eye-Catching Web Design</h5>
+          <p class="card-text text-center">
             Craft visually stunning and user-friendly websites that captivate
             your audience and elevate your brand.
           </p>
@@ -26,13 +26,15 @@
     <div class="col-sm-3">
       <div class="card">
         <img
-          class="card-img-top"
-          src="{{ url_for('static', filename='images/segmentation.png')}}"
+          class="card-img-top mx-auto"
+          src="{{ url_for('static', filename='images/icon-market-white.png')}}"
           alt="Card image cap"
         />
         <div class="card-body mt-2">
-          <h5 class="card-title">Results-Driven Digital Marketing</h5>
-          <p class="card-text">
+          <h5 class="card-title text-center">
+            Results-Driven Digital Marketing
+          </h5>
+          <p class="card-text text-center">
             Boost your online visibility with strategic SEO and social media
             marketing, driving more traffic and conversions.
           </p>
@@ -42,13 +44,13 @@
     <div class="col-sm-3">
       <div class="card">
         <img
-          class="card-img-top"
-          src="{{ url_for('static', filename='images/target.png')}}"
+          class="card-img-top mx-auto"
+          src="{{ url_for('static', filename='images/icon-data-white.png')}}"
           alt="Card image cap"
         />
         <div class="card-body mt-2">
-          <h5 class="card-title">Insightful Data Analysis</h5>
-          <p class="card-text">
+          <h5 class="card-title text-center">Insightful Data Analysis</h5>
+          <p class="card-text text-center">
             Uncover valuable insights and make data-driven decisions to optimize
             your business strategy and achieve your goals.
           </p>
@@ -58,13 +60,13 @@
     <div class="col-sm-3">
       <div class="card">
         <img
-          class="card-img-top"
-          src="{{ url_for('static', filename='images/social-media.png')}}"
+          class="card-img-top mx-auto"
+          src="{{ url_for('static', filename='images/icon-social-white.png')}}"
           alt="Card image cap"
         />
         <div class="card-body mt-2">
-          <h5 class="card-title">Expert Social Media Management</h5>
-          <p class="card-text">
+          <h5 class="card-title text-center">Expert Social Media Management</h5>
+          <p class="card-text text-center">
             Engage your audience, build brand loyalty, and expand your reach
             with our tailored social media strategies.
           </p>
@@ -72,7 +74,7 @@
       </div>
     </div>
   </div>
-
+</section>
   <!-- End Services First Section -->
 
   <!-- detailed services section -->
@@ -320,56 +322,24 @@
 
   <!-- portfolio section -->
   <section id="work">
-    <div
-      class="hero-image mt-5"
-      style="background-image: url({{url_for('static', filename='images/projects.png') }}); height:300px;"
-    >
-      <div class="hero-text">
-        <h1 class="mb-3 display-3">My Projects</h1>
-      </div>
-    </div>
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="card">
-            <a href="http:www.arwoodlandconsultants.com">
-              <img
-                class="card-img-top"
-                src="{{ url_for('static', filename='images/ar.png')}}"
-                alt="Card image cap"
-              />
-            </a>
-            <div class="card-body">
-              <h5 class="card-title">A & R Woodland Consultants</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <h2 class="display-2 text-center">Porfolio Section Coming Soon....</h2>
   </section>
   <!-- end portfolio section -->
 
   <!-- contact section-->
-  <section id="contact">
-    <div class="container-fluid mt-5">
-      <div
-        class="hero-image"
-        style="background-image: url({{url_for('static', filename='images/contact.png') }}); height:300px;"
-      >
-        <div class="hero-text">
-          <h1 class="mb-3 display-3">Get In Touch</h1>
-        </div>
-      </div>
-    </div>
+  <section id="contact" class="mt-5">
+    
 
-    <div class="container-fluid" id="contact-form">
+    <div class="container" id="contact-form">
       <div class="row">
         <div class="col-sm-4 offset-sm-2">
+          <h2 class="display-3">Get In Touch</h2>
           <p class="lead">
-            For any queries regarding my services and pricing, fill in the
-            contact form provided, or click
-            <a href="mailto:cmack6189@gmail.com"> here to email</a> me
+            email: <a href="mailto:cmack6189@gmail.com"> cmack6189@gmail.com</a>
           </p>
+          <p class="lead">Facebook: Coming Soon</p>
+          <p class="lead">Instagram: Coning Soon</p>
+          <p class="lead">WhatsApp: 07497 716 117</p>
         </div>
         <div class="col-sm-4">
           <div>

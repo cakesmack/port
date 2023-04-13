@@ -107,3 +107,8 @@ footer {
 .list-group {
   border-radius: 5px;
 }
+
+.card-img-top {
+  width: 100px;
+  height: auto;
+}
